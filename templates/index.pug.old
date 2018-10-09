@@ -2,12 +2,12 @@ extends layout.pug
 
 block content
   .col-lg-9.col-md-9
-    h3 Общие каналы
+    h3 Public Channels
     table.table.table-bordered.table-striped
       thead
-        th Канал
-        th # Пользователей
-        th Сейчас проигрывается
+        th Channel
+        th # Connected
+        th Now Playing
       tbody
         each chan in channels
           tr
@@ -15,7 +15,7 @@ block content
             td= chan.usercount
             td= chan.mediatitle
   .col-lg-3.col-md-3
-    h3 Войти в канал
+    h3 Enter Channel
     input#channelname.form-control(type="text", placeholder="Channel Name")
     p.text-muted New channels can be registered from the <a href="/account/channels">My Channels</a> page.
 

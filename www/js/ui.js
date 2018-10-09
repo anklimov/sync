@@ -902,3 +902,4 @@ $("#resize-video-smaller").click(function () {
         console.error(error);
     }
 });
+

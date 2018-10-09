@@ -275,7 +275,7 @@ Server.prototype.getChannel = function (name) {
     var c = new Channel(name);
     promActiveChannels.inc();
     c.on("empty", function () {
-        self.unloadChannel(c);
+      ///  self.unloadChannel(c);
     });
     c.waitFlag(Flags.C_ERROR, () => {
         self.unloadChannel(c, { skipSave: true });

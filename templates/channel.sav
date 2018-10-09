@@ -42,8 +42,8 @@ html(lang="en")
               p#confwrap-header
                 span#resize-conf-smaller.glyphicon.glyphicon-minus.pointer(title="Make the video smaller")
                 span#resize-conf-larger.glyphicon.glyphicon-plus.pointer(title="Make the video larger")
-                span#conftitle Видеочат
-              #embedconfplayer.embed-responsive.embed-responsive-16by9
+                span#conftitle Nothing Playing
+              .embed-responsive.embed-responsive-16by9
                 #confplayer.embed-responsive-item
               #chatheader
                 i#userlisttoggle.glyphicon.glyphicon-chevron-down.pull-left.pointer(title="Show/Hide Userlist")
@@ -55,13 +55,6 @@ html(lang="en")
               #guestlogin.input-group
                 span.input-group-addon Guest login
                 input#guestname.form-control(type="text", placeholder="Name")
-              #leftcontrols
-                button#newpollbtn.btn.btn-sm.btn-default New Poll
-                button#emotelistbtn.btn.btn-sm.btn-default Emote List
-              #leftpane
-                 #leftpane-inner.row
-                   #pollwrap.col-lg-12.col-md-12
-                   #playlistmanagerwrap.col-lg-12.col-md-12
             #videowrap.col-lg-7.col-md-7
               p#videowrap-header
                 span#resize-video-smaller.glyphicon.glyphicon-minus.pointer(title="Make the video smaller")
@@ -69,6 +62,10 @@ html(lang="en")
                 span#currenttitle Nothing Playing
               .embed-responsive.embed-responsive-16by9
                 #ytapiplayer.embed-responsive-item
+          #controlsrow.row
+            #leftcontrols.col-lg-5.col-md-5
+              button#newpollbtn.btn.btn-sm.btn-default New Poll
+              button#emotelistbtn.btn.btn-sm.btn-default Emote List
             #rightcontrols.col-lg-7.col-md-7
               #plcontrol.btn-group
                 button#showsearch.btn.btn-sm.btn-default(title="Search for a video", data-toggle="collapse", data-target="#searchcontrol")
@@ -94,68 +91,73 @@ html(lang="en")
                   span.glyphicon.glyphicon-link
                 button#voteskip.btn.btn-sm.btn-default(title="Voteskip")
                   span.glyphicon.glyphicon-step-forward
-              #playlistrow.row
-               #rightpane
-                 #rightpane-inner.row
-                   #searchcontrol.collapse.plcontrol-collapse.col-lg-12.col-md-12
-                     .vertical-spacer
-                     .input-group
-                       input#library_query.form-control(type="text", placeholder="Search query")
-                       span.input-group-btn
-                         button#library_search.btn.btn-default Library
-                       span.input-group-btn
-                         button#youtube_search.btn.btn-default YouTube
-                     .checkbox
-                       label
-                         input.add-temp(type="checkbox")
-                         | Add as temporary
-                     ul#library.videolist.col-lg-12.col-md-12
-                   #addfromurl.collapse.plcontrol-collapse.col-lg-12.col-md-12
-                     .vertical-spacer
-                     .input-group
-                       input#mediaurl.form-control(type="text", placeholder="Media URL")
-                       span.input-group-btn
-                         button#queue_next.btn.btn-default Next
-                       span.input-group-btn
-                         button#queue_end.btn.btn-default At End
-                     .checkbox
-                       label
-                         input.add-temp(type="checkbox")
-                         | Add as temporary
-                     div#addfromurl-queue
-                   #customembed.collapse.plcontrol-collapse.col-lg-12.col-md-12
-                     .vertical-spacer
-                     .input-group
-                       input#customembed-title.form-control(type="text", placeholder="Title (optional)")
-                       span.input-group-btn
-                         button#ce_queue_next.btn.btn-default Next
-                       span.input-group-btn
-                         button#ce_queue_end.btn.btn-default At End
-                     .checkbox
-                       label
-                         input.add-temp(type="checkbox")
-                         | Add as temporary
-                     | Paste the embed code below and click Next or At End.
-                     | Acceptable embed codes are <code>&lt;iframe&gt;</code> and <code>&lt;object&gt;</code> tags.  <strong>CUSTOM EMBEDS CANNOT BE SYNCHRONIZED.</strong>
-                     textarea#customembed-content.input-block-level.form-control(rows="3")
-                   #playlistmanager.collapse.plcontrol-collapse.col-lg-12.col-md-12
-                     .vertical-spacer
-                     .input-group
-                       input#userpl_name.form-control(type="text", placeholder="Playlist Name")
-                       span.input-group-btn
-                         button#userpl_save.btn.btn-default Save
-                     .checkbox
-                       label
-                         input.add-temp(type="checkbox")
-                         | Add as temporary
-                     ul#userpl_list.videolist
-                   #queuefail.col-lg-12.col-md-12
-                     .vertical-spacer
-                   .col-lg-12.col-md-12
-                     ul#queue.videolist
-                     #plmeta
-                       span#plcount 0 items
-                       span#pllength 00:00:00
+
+          #playlistrow.row
+            #leftpane.col-lg-5.col-md-5
+              #leftpane-inner.row
+                #pollwrap.col-lg-12.col-md-12
+                #playlistmanagerwrap.col-lg-12.col-md-12
+            #rightpane.col-lg-7.col-md-7
+              #rightpane-inner.row
+                #searchcontrol.collapse.plcontrol-collapse.col-lg-12.col-md-12
+                  .vertical-spacer
+                  .input-group
+                    input#library_query.form-control(type="text", placeholder="Search query")
+                    span.input-group-btn
+                      button#library_search.btn.btn-default Library
+                    span.input-group-btn
+                      button#youtube_search.btn.btn-default YouTube
+                  .checkbox
+                    label
+                      input.add-temp(type="checkbox")
+                      | Add as temporary
+                  ul#library.videolist.col-lg-12.col-md-12
+                #addfromurl.collapse.plcontrol-collapse.col-lg-12.col-md-12
+                  .vertical-spacer
+                  .input-group
+                    input#mediaurl.form-control(type="text", placeholder="Media URL")
+                    span.input-group-btn
+                      button#queue_next.btn.btn-default Next
+                    span.input-group-btn
+                      button#queue_end.btn.btn-default At End
+                  .checkbox
+                    label
+                      input.add-temp(type="checkbox")
+                      | Add as temporary
+                  div#addfromurl-queue
+                #customembed.collapse.plcontrol-collapse.col-lg-12.col-md-12
+                  .vertical-spacer
+                  .input-group
+                    input#customembed-title.form-control(type="text", placeholder="Title (optional)")
+                    span.input-group-btn
+                      button#ce_queue_next.btn.btn-default Next
+                    span.input-group-btn
+                      button#ce_queue_end.btn.btn-default At End
+                  .checkbox
+                    label
+                      input.add-temp(type="checkbox")
+                      | Add as temporary
+                  | Paste the embed code below and click Next or At End.
+                  | Acceptable embed codes are <code>&lt;iframe&gt;</code> and <code>&lt;object&gt;</code> tags.  <strong>CUSTOM EMBEDS CANNOT BE SYNCHRONIZED.</strong>
+                  textarea#customembed-content.input-block-level.form-control(rows="3")
+                #playlistmanager.collapse.plcontrol-collapse.col-lg-12.col-md-12
+                  .vertical-spacer
+                  .input-group
+                    input#userpl_name.form-control(type="text", placeholder="Playlist Name")
+                    span.input-group-btn
+                      button#userpl_save.btn.btn-default Save
+                  .checkbox
+                    label
+                      input.add-temp(type="checkbox")
+                      | Add as temporary
+                  ul#userpl_list.videolist
+                #queuefail.col-lg-12.col-md-12
+                  .vertical-spacer
+                .col-lg-12.col-md-12
+                  ul#queue.videolist
+                  #plmeta
+                    span#plcount 0 items
+                    span#pllength 00:00:00
           #resizewrap.row
             .col-lg-5.col-md-5
             #videowidth.col-lg-7.col-md-7
@@ -251,7 +253,6 @@ html(lang="en")
     script(src="/js/player.js")
     script(src="/js/paginator.js")
     script(src="/js/ui.js")
-    script(src="/js/vchat.js")
     script(src="/js/callbacks.js")
     script(defer, src="https://www.youtube.com/iframe_api")
     script(defer, src="https://api.dmcdn.net/all.js")

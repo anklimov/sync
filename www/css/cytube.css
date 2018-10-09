@@ -102,6 +102,10 @@
     margin-bottom: 10px;
 }
 
+#confwrap, #videowrap {
+    margin-bottom: 10px;
+}
+ 
 .embed-responsive-chat {
     padding-bottom: 78.75%;
 }
@@ -688,3 +692,16 @@ input#logout[type="submit"]:hover {
 body.hd #resize-video-larger, body.hd #resize-video-smaller {
     display: none;
 }
+
+.visible {  
+display: block;  
+}  
+.hidden {  
+display: none;  
+opacity: 0;  
+}
+
+#embedconfplayer {
+    display: none;
+}
+
