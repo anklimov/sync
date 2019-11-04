@@ -21,6 +21,7 @@ TYPE_MAP =
     tc: VideoJSPlayer
     cm: VideoJSPlayer
     mx: MixerPlayer
+    wt: WebtorrentPlayer
 
 window.loadMediaPlayer = (data) ->
     try

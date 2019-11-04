@@ -205,6 +205,8 @@
                 return "https://www.smashcast.tv/" + id;
             case "hl":
                 return id;
+            case "wt":
+                return id;
             case "sb":
                 return "https://streamable.com/" + id;
             case "tc":

@@ -5,517 +5,517 @@ https://vk.com/iptvclub2018
 
 #EXTINF:-1,Первый канал
 #EXTGRP:Федеральный
-http://163.172.24.228/hls/01/index.m3u8
+https://163.172.24.228/hls/01/index.m3u8
 
 #EXTINF:-1,Россия 1
 #EXTGRP:Федеральный
-http://cdnmg.secure.live.rtr-vesti.ru/live/smil:r1.smil/chunklist_b1600000.m3u8
+https://cdnmg.secure.live.rtr-vesti.ru/live/smil:r1.smil/chunklist_b1600000.m3u8
 
 #EXTINF:-1,НТВ
 #EXTGRP:Другое
-http://163.172.24.228/hls/04/index.m3u8
+https://163.172.24.228/hls/04/index.m3u8
 
 #EXTINF:-1,Пятый канал
 #EXTGRP:Познавательные
-http://91.210.24.70:88/tv_5kanal/video.m3u8
+https://91.210.24.70:88/tv_5kanal/video.m3u8
 
 #EXTINF:-1,Россия К
 #EXTGRP:Познавательные
-http://cdnmg.secure.live.rtr-vesti.ru/live/smil:rk.smil/chunklist_b1600000.m3u8
+https://cdnmg.secure.live.rtr-vesti.ru/live/smil:rk.smil/chunklist_b1600000.m3u8
 
 #EXTINF:-1,Россия 24
 #EXTGRP:Новости
-http://83.234.104.142/rossia24/tracks-v1a1/index.m3u8
+https://83.234.104.142/rossia24/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Карусель +3
 #EXTGRP:Детские
-http://hlstv.nsk.211.ru/239.211.0.8/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.0.8/stream.m3u8
 
 #EXTINF:-1,ОТР
 #EXTGRP: Федеральный
-http://31.185.0.40:8080/otr/playlist.m3u8
+https://31.185.0.40:8080/otr/playlist.m3u8
 
 #EXTINF:-1,ТВЦ
 #EXTGRP:Федеральный
-http://tvc-hls.cdnvideo.ru/tvc-p222/smil:tvc_p11.smil/chunklist_b1703000.m3u8
+https://tvc-hls.cdnvideo.ru/tvc-p222/smil:tvc_p11.smil/chunklist_b1703000.m3u8
 
 #EXTINF:-1,Рен ТВ
 #EXTGRP:Познавательные
-http://hlstv.nsk.211.ru/239.211.0.11/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.0.11/stream.m3u8
 
 #EXTINF:-1, Спас
 #EXTGRP:Познавательные
-http://live-spastv.cdnvideo.ru/spastv-publish/spastv.sdp/playlist.m3u8
+https://live-spastv.cdnvideo.ru/spastv-publish/spastv.sdp/playlist.m3u8
 
 #EXTINF:-1,СТС
 #EXTGRP:Другое
-http://91.210.24.70:88/tv_sochi_sts/video.m3u8
+https://91.210.24.70:88/tv_sochi_sts/video.m3u8
 
 #EXTINF:-1,Домашний
 #EXTGRP:Другое
-http://163.172.24.228/hls/23/index.m3u8
+https://163.172.24.228/hls/23/index.m3u8
 
 #EXTINF:-1,ТВ3
 #EXTGRP:Другое
-http://31.185.0.40:8080/tv3/playlist.m3u8
+https://31.185.0.40:8080/tv3/playlist.m3u8
 
 #EXTINF:-1,Пятница!
 #EXTGRP:Познавательные
-http://83.234.104.142/pyatnitsa/tracks-v1a1/index.m3u8
+https://83.234.104.142/pyatnitsa/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Звезда
 #EXTGRP:Познавательные
-http://31.185.0.40:8080/zvezda/playlist.m3u8
+https://31.185.0.40:8080/zvezda/playlist.m3u8
 
 #EXTINF:-1,Мир
 #EXTGRP:Другое
-http://91.210.24.70:88/tv_sochi_mir/video.m3u8
+https://91.210.24.70:88/tv_sochi_mir/video.m3u8
 
 #EXTINF:-1,ТНТ4
 #EXTGRP:Другое
-http://cdn-01.bonus-tv.ru:8080/tnt_stream/tracks-v1a1/index.m3u8
+https://cdn-01.bonus-tv.ru:8080/tnt_stream/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Муз ТВ
 #EXTGRP:Музыкальные
-http://91.210.24.70:88/tv_sochi_muz_tv/video.m3u8
+https://91.210.24.70:88/tv_sochi_muz_tv/video.m3u8
 
 #EXTINF:-1,Канал Disney
 #EXTGRP:Детские
-http://ott-cdn.ucom.am/s60/04.m3u8
+https://ott-cdn.ucom.am/s60/04.m3u8
 
 #EXTINF:-1,Че!
 #EXTGRP:Другое
-http://83.234.104.142/che/tracks-v1a1/index.m3u8
+https://83.234.104.142/che/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,ТНТ4
 #EXTGRP:Другое
-http://83.234.104.142/tnt4/tracks-v1a1/index.m3u8
+https://83.234.104.142/tnt4/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Ю
 #EXTGRP:Другое
-http://83.234.104.142/utv/tracks-v1a1/index.m3u8
+https://83.234.104.142/utv/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,2x2
 #EXTGRP:Другое
-http://83.234.104.142/2x2/tracks-v1a1/index.m3u8
+https://83.234.104.142/2x2/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,360
 #EXTGRP:Другое
-http://85.132.71.6/ru/360/index.m3u8
+https://85.132.71.6/ru/360/index.m3u8
 
 #EXTINF:-1,Москва 24
 #EXTGRP:Другое
-http://163.172.24.228/hls/73/index.m3u8
+https://163.172.24.228/hls/73/index.m3u8
 
 #EXTINF:-1,Эхо ТВ
 #EXTGRP:Другое
-http://live-echotv.cdnvideo.ru/echotv/echotv.sdp/playlist.m3u8
+https://live-echotv.cdnvideo.ru/echotv/echotv.sdp/playlist.m3u8
 
 #EXTINF:-1,Продвижение
 #EXTGRP:Познавательные
-http://cdn-01.bonus-tv.ru:8080/prodvizhenie/tracks-v1a1/index.m3u8
+https://cdn-01.bonus-tv.ru:8080/prodvizhenie/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,СТС Love
 #EXTGRP:Другое
-http://83.234.104.142/stslove/tracks-v1a1/index.m3u8
+https://83.234.104.142/stslove/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,СТС Mega
 #EXTGRP:Другое
-http://37.233.27.53:8891
+https://37.233.27.53:8891
 
 #EXTINF:-1,Сарафан
 #EXTGRP:Другое
-http://ott-cdn.ucom.am/s38/04.m3u8
+https://ott-cdn.ucom.am/s38/04.m3u8
 
 //Фильмы
 
 #EXTINF:-1,НСТ
 #EXTGRP:Другое
-http://83.234.104.142/nstv/tracks-v1a1/index.m3u8
+https://83.234.104.142/nstv/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,A1
 #EXTGRP:Другое
-http://ott-cdn.ucom.am/s45/04.m3u8
+https://ott-cdn.ucom.am/s45/04.m3u8
 
 #EXTINF:-1,A2
 #EXTGRP:Другое
-http://ott-cdn.ucom.am/s33/04.m3u8
+https://ott-cdn.ucom.am/s33/04.m3u8
 
 #EXTINF:-1,Fox
 #EXTGRP:Познавательные
-http://hlstv.nsk.211.ru/239.211.211.91/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.91/stream.m3u8
 
 #EXTINF:-1,Fox Life
 #EXTGRP:Познавательные
-http://hlstv.nsk.211.ru/239.211.211.92/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.92/stream.m3u8
 
 #EXTINF:-1,Paramount Comedy
 #EXTGRP:Другое
-http://hlstv.nsk.211.ru/239.211.211.73/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.73/stream.m3u8
 
 #EXTGRP:Кино
-http://ott-cdn.ucom.am/s90/04.m3u8
+https://ott-cdn.ucom.am/s90/04.m3u8
 
 #EXTINF:-1,TV 1000 Action
 #EXTGRP:Кино
-http://ott-cdn.ucom.am/s91/04.m3u8
+https://ott-cdn.ucom.am/s91/04.m3u8
 
 #EXTINF:-1,TV 1000 Русское кино
 #EXTGRP:Кино
-http://ott-cdn.ucom.am/s95/04.m3u8
+https://ott-cdn.ucom.am/s95/04.m3u8
 
 #EXTINF:-1,TV XXI
 #EXTGRP:Кино
-http://83.234.104.142/tvxxi/tracks-v1a1/index.m3u8
+https://83.234.104.142/tvxxi/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Zee TV
 #EXTGRP:Кино
-http://83.234.104.142/zeetv/tracks-v1a1/index.m3u8
+https://83.234.104.142/zeetv/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Zik TV
 #EXTGRP:Кино
-http://live-zik-hls1.cosmonova.net.ua/hls/zik_ua_mid/index.m3u8
+https://live-zik-hls1.cosmonova.net.ua/hls/zik_ua_mid/index.m3u8
 
 #EXTINF:-1,Дом кино
 #EXTGRP:Кино
-http://83.234.104.142/domkino/tracks-v1a1/index.m3u8
+https://83.234.104.142/domkino/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Феникс плюс кино
 #EXTGRP:Другое
-http://hlstv.nsk.211.ru/239.211.211.72/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.72/stream.m3u8
 
 #EXTINF:-1,Еврокино
 #EXTGRP:Кино
-http://hlstv.nsk.211.ru/239.211.211.90/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.90/stream.m3u8
 
 #EXTINF:-1,Иллюзион+
 #EXTGRP:Другое
-http://hlstv.nsk.211.ru/239.211.211.89/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.89/stream.m3u8
 
 #EXTINF:-1,Кино ТВ
 #EXTGRP:Кино
-http://83.234.104.142/kinotv/tracks-v1a1/index.m3u8
+https://83.234.104.142/kinotv/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Ретро
 #EXTGRP:Другое
-http://hlstv.nsk.211.ru/239.211.211.58/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.58/stream.m3u8
 
 #EXTINF:-1,Русский Иллюзион
 #EXTGRP:Другое
-http://hlstv.nsk.211.ru/239.211.211.88/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.88/stream.m3u8
 
 #EXTINF:-1,Супер
 #EXTGRP:Другое
-http://83.234.104.142/super/tracks-v1a1/index.m3u8
+https://83.234.104.142/super/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Телекафе
 #EXTGRP:Другое
-http://ott-cdn.ucom.am/s56/04.m3u8
+https://ott-cdn.ucom.am/s56/04.m3u8
 
 #EXTINF:0,TV1000 
-http://ott-cdn.ucom.am/s90/index.m3u8
+https://ott-cdn.ucom.am/s90/index.m3u8
 
 #EXTINF:0,TV1000 Action 
-http://ott-cdn.ucom.am/s91/index.m3u8
+https://ott-cdn.ucom.am/s91/index.m3u8
 
 #EXTINF:0,TV1000 Русское кино
-http://ott-cdn.ucom.am/s95/index.m3u8
+https://ott-cdn.ucom.am/s95/index.m3u8
 
 #EXTINF:-1,Кинопремьера HD
-http://hlstv.brn.211.ru/239.211.200.28/stream.m3u8
+https://hlstv.brn.211.ru/239.211.200.28/stream.m3u8
 
 #EXTINF:-1,Русский Роман HD
-http://hlstv.brn.211.ru/239.211.200.29/stream.m3u8
+https://hlstv.brn.211.ru/239.211.200.29/stream.m3u8
 
 #EXTINF:0,Bollywood HD
-http://81.25.234.43:8083/tv/bollywoodHD/playlist.m3u8
+https://81.25.234.43:8083/tv/bollywoodHD/playlist.m3u8
 #EXTINF:0,Кинозал Зарубежная киноклассика
-http://streams.tv.mts.by/zarubezhnaya_classica/1/index.m3u8
+https://streams.tv.mts.by/zarubezhnaya_classica/1/index.m3u8
 #EXTINF:0,Кинозал Советская киноклассика
-http://streams.tv.mts.by/soviet_classic/1/index.m3u8
+https://streams.tv.mts.by/soviet_classic/1/index.m3u8
 #EXTINF:0,Кинозал Индийская киноклассика
-http://streams.tv.mts.by/indiyskaya_classica/1/index.m3u8
+https://streams.tv.mts.by/indiyskaya_classica/1/index.m3u8
 #EXTINF:0,Кинозал Классика Голливуда
-http://streams.tv.mts.by/hollywood_classic/1/index.m3u8
+https://streams.tv.mts.by/hollywood_classic/1/index.m3u8
 #EXTINF:-1,Видеокассета 90-х часть1
-http://188.138.75.210:5566/90-1/index.m3u8?auth=90:90
+https://188.138.75.210:5566/90-1/index.m3u8?auth=90:90
 #EXTINF:-1,Видеокассета 90-х часть2
-http://188.138.75.210:5566/90-2/index.m3u8?auth=90:90
+https://188.138.75.210:5566/90-2/index.m3u8?auth=90:90
 #EXTINF:-1,Видеокассета 90-х часть3
-http://188.138.75.210:5566/90-3/index.m3u8?auth=90:90
+https://188.138.75.210:5566/90-3/index.m3u8?auth=90:90
 #EXTINF:0,Ужасы
-http://autopilot.myowntv.org/content/35026/index.m3u8
+https://autopilot.myowntv.org/content/35026/index.m3u8
 #EXTINF:0,KINOLD
-http://autopilot.myowntv.org/content/35015/index.m3u8
+https://autopilot.myowntv.org/content/35015/index.m3u8
 #EXTINF:0.882367,КиноМеню HD
-http://62.76.26.81:8081/hdmedia/menu/playlist.m3u8
+https://62.76.26.81:8081/hdmedia/menu/playlist.m3u8
 #EXTINF:-1,Русский роман
-http://hlstv.brn.211.ru/239.211.211.31/stream.m3u8
+https://hlstv.brn.211.ru/239.211.211.31/stream.m3u8
 #EXTINF:0,Русский бестселлер
 #EXTVLCOPT:network-caching=1000
-http://91.192.168.242:6001/play/a01k/index.m3u8
+https://91.192.168.242:6001/play/a01k/index.m3u8
 #EXTINF:-1,Кинокомедия
-http://streamer.cosmostv.by/streaming/comedytv/604/tvrecw/playlist.m3u8
+https://streamer.cosmostv.by/streaming/comedytv/604/tvrecw/playlist.m3u8
 #EXTINF:-1,Киномикс
-http://streamer.cosmostv.by/streaming/ntv_kino_plyus/604/tvrecw/playlist.m3u8
+https://streamer.cosmostv.by/streaming/ntv_kino_plyus/604/tvrecw/playlist.m3u8
 #EXTINF:-1,Киносвидание
-http://193.124.177.175:8081/live-x/kinolove/playlist.m3u8|user-agent=smartsdk
+https://193.124.177.175:8081/live-x/kinolove/playlist.m3u8|user-agent=smartsdk
 #EXTINF:-1,Киносемья
-http://193.124.177.175:8081/live-x/kinofamily/playlist.m3u8|user-agent=smartsdk
+https://193.124.177.175:8081/live-x/kinofamily/playlist.m3u8|user-agent=smartsdk
 #EXTINF:-1,Киносерия
-http://streamer.cosmostv.by/streaming/mnogotv/604/copy/playlist.m3u8
+https://streamer.cosmostv.by/streaming/mnogotv/604/copy/playlist.m3u8
 #EXTINF:-1,Кинохит
-http://streamer.cosmostv.by/streaming/kinohit/604/tvrecw/playlist.m3u8
+https://streamer.cosmostv.by/streaming/kinohit/604/tvrecw/playlist.m3u8
 #EXTINF:-1,Любимое.TV
-http://wse.planeta-online.tv:1935/live/channel_6/playlist.m3u8
+https://wse.planeta-online.tv:1935/live/channel_6/playlist.m3u8
 #EXTINF:-1,Наше любимое кино
-http://streamer.cosmostv.by/streaming/favmovie/604/copy/playlist.m3u8
+https://streamer.cosmostv.by/streaming/favmovie/604/copy/playlist.m3u8
 #EXTINF:-1,Наше новое кино
-http://streamer.cosmostv.by/streaming/nashe_novoe_kino/604/tvrecw/playlist.m3u8
+https://streamer.cosmostv.by/streaming/nashe_novoe_kino/604/tvrecw/playlist.m3u8
 #EXTINF:-1,Премьера TV (Трейлеры)
-http://wse.planeta-online.tv:1935/live/channel_5/chunklist.m3u8
+https://wse.planeta-online.tv:1935/live/channel_5/chunklist.m3u8
 #EXTINF:-1,Ретро
-http://streamer.cosmostv.by/streaming/retro/604/tvrecw/playlist.m3u8
+https://streamer.cosmostv.by/streaming/retro/604/tvrecw/playlist.m3u8
 #EXTINF:-1,СТРК HD
-http://sochinskayatrk.ru/hdtv/hls/strc_hd/playlist.m3u8
+https://sochinskayatrk.ru/hdtv/hls/strc_hd/playlist.m3u8
 #EXTINF:0,Мужское кино
-http://50.7.136.155:8081/muzhskoe-kino/index.m3u8
+https://50.7.136.155:8081/muzhskoe-kino/index.m3u8
 #EXTINF:0,Наше новое кино
-http://50.7.136.155:8081/nashe-novoe-kino/index.m3u8
+https://50.7.136.155:8081/nashe-novoe-kino/index.m3u8
 #EXTINF:0,Дом кино
-http://50.7.136.155:8081/domkino/index.m3u8
+https://50.7.136.155:8081/domkino/index.m3u8
 #EXTINF:-1,Еврокино
-http://streamer.cosmostv.by/streaming/eurokino/604/copy/playlist.m3u8
+https://streamer.cosmostv.by/streaming/eurokino/604/copy/playlist.m3u8
 #EXTINF:-1,Иллюзион+
-http://streamer.cosmostv.by/streaming/illyuzion/604/tvrecw/playlist.m3u8
+https://streamer.cosmostv.by/streaming/illyuzion/604/tvrecw/playlist.m3u8
 #EXTINF:-1,Индийское кино
-http://streamer.cosmostv.by/streaming/indiatv/604/copy/playlist.m3u8
+https://streamer.cosmostv.by/streaming/indiatv/604/copy/playlist.m3u8
 #EXTINF:0,Родное кино
-http://50.7.136.155:8081/rodnoe-kino/index.m3u8
+https://50.7.136.155:8081/rodnoe-kino/index.m3u8
 #EXTINF:-1,FOX HD
-http://hlstv.brn.211.ru/239.211.200.17/stream.m3u8
+https://hlstv.brn.211.ru/239.211.200.17/stream.m3u8
 #EXTINF:-1,FOX LIFE HD
-http://hlstv.brn.211.ru/239.211.200.18/stream.m3u8 
+https://hlstv.brn.211.ru/239.211.200.18/stream.m3u8 
 #EXTINF:-1,Amedia_Premium HD
-http://109.248.236.41:4433/udp/238.1.1.71:1234
+https://109.248.236.41:4433/udp/238.1.1.71:1234
 #EXTINF:1,Amedia Hit HD
-http://109.248.236.41:4433/udp/238.1.1.96:1234
+https://109.248.236.41:4433/udp/238.1.1.96:1234
 #EXTINF:-1,А1 HD
-http://109.248.236.41:4433/udp/238.1.1.97:1234
+https://109.248.236.41:4433/udp/238.1.1.97:1234
 #EXTINF:0,КиноЗаказ 1
 https://hls.goodgame.ru/hls/114023.m3u8
 #EXTINF:0,КиноЗаказ 2
-http://hls.goodgame.ru/hls/12949.m3u8
+https://hls.goodgame.ru/hls/12949.m3u8
 #EXTINF:0,КиноЗаказ 3
-http://hls.goodgame.ru/hls/5346.m3u8
+https://hls.goodgame.ru/hls/5346.m3u8
 #EXTINF:-1,STR TV HD
-http://hls.goodgame.ru/hls/130048.m3u8
+https://hls.goodgame.ru/hls/130048.m3u8
 #EXTINF:-1,Cinema (Космос ТВ)
-http://streamer.cosmostv.by/streaming/cinema_cosmostv/604/copy/playlist.m3u8
+https://streamer.cosmostv.by/streaming/cinema_cosmostv/604/copy/playlist.m3u8
 #EXTINF:-1,Promo1
 https://kiev1-cdn.lanet.tv/tv/2001.m3u8
 #EXTINF:-1,Киноменю HD
-http://62.76.26.81:8081/hdmedia/menu/playlist.m3u8
+https://62.76.26.81:8081/hdmedia/menu/playlist.m3u8
 
 //Музыкальные
 
 #EXTINF:-1,Жара TV
 #EXTGRP:Музыкальные
-http://83.234.104.142/zhara/tracks-v1a1/index.m3u8
+https://83.234.104.142/zhara/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Bridge TV
 #EXTGRP:Музыкальные
-http://83.234.104.142/bridgetv/tracks-v1a1/index.m3u8
+https://83.234.104.142/bridgetv/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Bridge TV Русский Хит
 #EXTGRP:Музыкальные
-http://hlstv.nsk.211.ru/239.211.211.9/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.9/stream.m3u8
 
 #EXTINF:-1,Deejay TV
 #EXTGRP:Познавательные
-http://deejay_tv-lh.akamaihd.net/i/DeejayTv_1@129866/index_600_av-p.m3u8
+https://deejay_tv-lh.akamaihd.net/i/DeejayTv_1@129866/index_600_av-p.m3u8
 
 #EXTINF:-1,Europa Plus TV
 #EXTGRP:Музыкальные
-http://hlstv.nsk.211.ru/239.211.211.8/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.8/stream.m3u8
 
 #EXTINF:-1,Шансон ТВ
-http://hls.shansontv.cdnvideo.ru/shansontv/shansontv_hq.sdp/playlist.m3u8
+https://hls.shansontv.cdnvideo.ru/shansontv/shansontv_hq.sdp/playlist.m3u8
 
 #EXTINF:-1,1HD Music TV
 #EXTGRP:Музыкальные
-http://cdn-01.bonus-tv.ru:8080/1HDmusic/tracks-v3a1/index.m3u8
+https://cdn-01.bonus-tv.ru:8080/1HDmusic/tracks-v3a1/index.m3u8
 
 #EXTINF:-1,Fresh TV
 #EXTGRP:Познавательные
-http://wse.planeta-online.tv:1935/live/channel_4/index.m3u8
+https://wse.planeta-online.tv:1935/live/channel_4/index.m3u8
 
 #EXTINF:-1,HIT TV
 #EXTGRP:Музыкальные
-http://kissfm-cires21-video.secure.footprint.net/hittv/bitrate_3.m3u8
+https://kissfm-cires21-video.secure.footprint.net/hittv/bitrate_3.m3u8
 
 #EXTINF:-1,Heart TV HD
 #EXTGRP:HD
-http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_1500_av-b.m3u8
+https://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/index_1500_av-b.m3u8
 
 #EXTINF:-1,Heavy Metal TV
 #EXTGRP:Музыкальные
-http://70.166.99.93:1935/hmtv/myStream/playlist.m3u8
+https://70.166.99.93:1935/hmtv/myStream/playlist.m3u8
 
 #EXTINF:-1,Hit Music Channel
 #EXTGRP:Музыкальные
-http://1mstream.digicable.hu/hitmusic/hitmusic.m3u8
+https://1mstream.digicable.hu/hitmusic/hitmusic.m3u8
 
 #EXTINF:-1,Kronehit TV HD
 #EXTGRP:HD
-http://bitcdn-kronehit.bitmovin.com/v2/hls/chunklist_b1628000.m3u8
+https://bitcdn-kronehit.bitmovin.com/v2/hls/chunklist_b1628000.m3u8
 
 #EXTINF:-1,M2O TV
 #EXTGRP:Музыкальные
-http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-p.m3u8
+https://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-p.m3u8
 
 #EXTINF:-1,MCM TOP
 #EXTGRP:Музыкальные
-http://ott-cdn.ucom.am/s49/04.m3u8
+https://ott-cdn.ucom.am/s49/04.m3u8
 
 #EXTINF:-1,MostVideo TV HD
 #EXTGRP:HD
-http://w4.mostvideo.tv/tv/ch1.m3u8
+https://w4.mostvideo.tv/tv/ch1.m3u8
 
 #EXTINF:-1,Music Box Gold
 #EXTGRP:Музыкальные
-http://live-musicbox.cdnvideo.ru/musicbox2/mboxtv.sdp/playlist.m3u8
+https://live-musicbox.cdnvideo.ru/musicbox2/mboxtv.sdp/playlist.m3u8
 
 #EXTINF:-1,Music Box Gold
 #EXTGRP:Музыкальные
-http://hlstv.nsk.211.ru/239.211.211.83/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.83/stream.m3u8
 
 #EXTINF:-1,Muzzone
 #EXTGRP:Музыкальные
-http://live.muzzone.cdnvideo.ru/muzzone/muzzone.sdp/playlist.m3u8
+https://live.muzzone.cdnvideo.ru/muzzone/muzzone.sdp/playlist.m3u8
 
 #EXTINF:-1,NRJ Hits TV HD
 #EXTGRP:HD
-http://5.196.138.6:1935/live/nrjbelgique_720p/playlist.m3u8
+https://5.196.138.6:1935/live/nrjbelgique_720p/playlist.m3u8
 
 #EXTINF:-1,RU TV
 #EXTGRP:Другое
-http://live-rmg.cdnvideo.ru/rmg/rutv_new.sdp/playlist.m3u8
+https://live-rmg.cdnvideo.ru/rmg/rutv_new.sdp/playlist.m3u8
 
 #EXTINF:-1,Radio 105 Network TV
 #EXTGRP:Музыкальные
-http://tv.105.net:1935/live/105Test3/playlist.m3u8
+https://tv.105.net:1935/live/105Test3/playlist.m3u8
 
 #EXTINF:-1,Radio Monte Carlo TV
 #EXTGRP:Музыкальные
-http://tv.105.net:1935/live/rmc3/playlist.m3u8
+https://tv.105.net:1935/live/rmc3/playlist.m3u8
 
 #EXTINF:-1,Russian Music Box
 #EXTGRP:Музыкальные
-http://hlstv.nsk.211.ru/239.211.211.85/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.85/stream.m3u8
 
 #EXTINF:-1,Xite TV HD (1)
 #EXTGRP:HD
-http://highvolume03.streampartner.nl:1935/vleugels_hd5/livestream/playlist.m3u8
+https://highvolume03.streampartner.nl:1935/vleugels_hd5/livestream/playlist.m3u8
 
 #EXTINF:-1,О!2 ТВ
 #EXTGRP:Другое
-http://hls.mycdn0633430096.cdnvideo.ru/mycdn0633430096/stream1_sd.sdp/playlist.m3u8
+https://hls.mycdn0633430096.cdnvideo.ru/mycdn0633430096/stream1_sd.sdp/playlist.m3u8
 
 //Позновательные
 
 #EXTINF:-1,National Geographic HD 
-http://hlstv.brn.211.ru/239.211.200.16/stream.m3u8
+https://hlstv.brn.211.ru/239.211.200.16/stream.m3u8
 
 #EXTINF:-1,Nat Geo Wild HD
-http://hlstv.brn.211.ru/239.211.200.15/stream.m3u8
+https://hlstv.brn.211.ru/239.211.200.15/stream.m3u8
 
 #EXTINF:-1,TLC HD
-http://hlstv.brn.211.ru/239.211.200.25/stream.m3u8
+https://hlstv.brn.211.ru/239.211.200.25/stream.m3u8
 
 #EXTINF:-1,Animal Planet HD
-http://hlstv.brn.211.ru/239.211.200.26/stream.m3u8
+https://hlstv.brn.211.ru/239.211.200.26/stream.m3u8
 
 #EXTINF:0,Охота и Рыбалка
 #EXTVLCOPT:network-caching=1000
-http://streamer.cosmostv.by/streaming/hafi/604/copy/playlist.m3u8
+https://streamer.cosmostv.by/streaming/hafi/604/copy/playlist.m3u8
 
 #EXTINF:-1,Большая Азия HD
-http://now2.eaglecdn.com/stream_transcoded_1080/bigasia_test.m3u8
+https://now2.eaglecdn.com/stream_transcoded_1080/bigasia_test.m3u8
 
 #EXTINF:0, Охотник и рыболов HD
 #EXTVLCOPT:network-caching=1000
-http://streamer.cosmostv.by/streaming/ohotnik_i_rybolov_hd/604/copy/playlist.m3u8
+https://streamer.cosmostv.by/streaming/ohotnik_i_rybolov_hd/604/copy/playlist.m3u8
 
 #EXTINF:-1,Наша сибирь HD
-http://hlstv.brn.211.ru/239.211.200.30/stream.m3u8
+https://hlstv.brn.211.ru/239.211.200.30/stream.m3u8
 
 #EXTINF:-1,Техно 24
 #EXTGRP:Другое
-http://ott-cdn.ucom.am/s68/04.m3u8
+https://ott-cdn.ucom.am/s68/04.m3u8
 
 #EXTINF:-1,Viasat Explore
 #EXTGRP:Познавательные
-http://ott-cdn.ucom.am/s72/04.m3u8
+https://ott-cdn.ucom.am/s72/04.m3u8
 
 #EXTINF:-1,Viasat Nature
 #EXTGRP:Познавательные
-http://ott-cdn.ucom.am/s67/04.m3u8
+https://ott-cdn.ucom.am/s67/04.m3u8
 
 #EXTINF:-1,TV Brics [FHD]
 #EXTGRP:HD
-http://live2.mediacdn.ru/sr1/tvbrics/playlist.m3u8
+https://live2.mediacdn.ru/sr1/tvbrics/playlist.m3u8
 
 #EXTINF:-1,TLC
 #EXTGRP:Познавательные
-http://83.234.104.142/tlc/tracks-v1a1/index.m3u8
+https://83.234.104.142/tlc/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Animal Planet
 #EXTGRP:Познавательные
-http://hlstv.nsk.211.ru/239.211.211.34/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.34/stream.m3u8
 
 #EXTINF:-1,Discovery Channel
 #EXTGRP:Познавательные
-http://83.234.104.142/discoverychannel/tracks-v1a1/index.m3u8
+https://83.234.104.142/discoverychannel/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Discovery Science
 #EXTGRP:Познавательные
-http://83.234.104.142/discoveryscience/tracks-v1a1/index.m3u8
+https://83.234.104.142/discoveryscience/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,ID
 #EXTGRP:Другое
-http://83.234.104.142/idxtra/tracks-v1a1/index.m3u8
+https://83.234.104.142/idxtra/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Nano TV
 #EXTGRP:Познавательные
-http://nano.teleservice.su:8080/hls/nano.m3u8
+https://nano.teleservice.su:8080/hls/nano.m3u8
 
 #EXTINF:-1,Nat Geo
 #EXTGRP:Познавательные
-http://83.234.104.142/natgeo/tracks-v1a1/index.m3u8
+https://83.234.104.142/natgeo/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Nebiset TV
 #EXTGRP:Познавательные
-http://hls.nebiset.tv/nebiset_2000/index.m3u8
+https://hls.nebiset.tv/nebiset_2000/index.m3u8
 
 
 #EXTINF:-1,Ocean TV
 #EXTGRP:Познавательные
-http://91.192.168.242:9091
+https://91.192.168.242:9091
 
 #EXTINF:-1,Наука
 #EXTGRP:Познавательные
-http://ott-cdn.ucom.am/s98/04.m3u8
+https://ott-cdn.ucom.am/s98/04.m3u8
 
 //Новости
 
 #EXTINF:-1,Известия ТВ HD
 #EXTGRP:HD
-http://hls-igi.cdnvideo.ru/igi/igi_sq/playlist.m3u8
+https://hls-igi.cdnvideo.ru/igi/igi_sq/playlist.m3u8
 
 #EXTINF:-1,CGTN Русский
 #EXTGRP:Другое
-http://live.cgtn.com/1000r/prog_index.m3u8
+https://live.cgtn.com/1000r/prog_index.m3u8
 
 #EXTINF:-1,Global Star TV
 #EXTGRP:Познавательные
@@ -523,66 +523,66 @@ rtmp://stream.globalstar.tv/live/gs
 
 #EXTINF:-1,RT
 #EXTGRP:Познавательные
-http://cdn-01.bonus-tv.ru:8080/RussiaToday/tracks-v3a1/index.m3u8
+https://cdn-01.bonus-tv.ru:8080/RussiaToday/tracks-v3a1/index.m3u8
 
 //Спортивные
 
 #EXTINF:-1,Eurosport 1
 #EXTGRP:Познавательные
-http://83.234.104.142/eurosport/tracks-v1a1/index.m3u8
+https://83.234.104.142/eurosport/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Eurosport 2
 #EXTGRP:Познавательные
-http://83.234.104.142/eurosport2/tracks-v1a1/index.m3u8
+https://83.234.104.142/eurosport2/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Extreme Sports
 #EXTGRP:Познавательные
-http://hlstv.nsk.211.ru/239.211.211.47/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.47/stream.m3u8
 
 #EXTINF:-1,M-1 Global TV HD (English)
 #EXTGRP:HD
-http://live-m1globaltv.cdnvideo.ru/m1globaltv/m1globaltv-rtmp-eng_720p/chunklist.m3u8
+https://live-m1globaltv.cdnvideo.ru/m1globaltv/m1globaltv-rtmp-eng_720p/chunklist.m3u8
 
 #EXTINF:-1,Xsport TV
 #EXTGRP:Познавательные
-http://95.67.103.251/hls/xsport_ua_mid/index.m3u8
+https://95.67.103.251/hls/xsport_ua_mid/index.m3u8
 
 #EXTINF:-1,Xsport TV HD
 #EXTGRP:HD
-http://95.67.103.251/hls/xsport_ua_hi/index.m3u8
+https://95.67.103.251/hls/xsport_ua_hi/index.m3u8
 
 #EXTINF:-1,Бокс ТВ HD
 #EXTGRP:HD
-http://hls.boxingtvru.cdnvideo.ru/boxingtvru/boxingtvru_hq/playlist.m3u8
+https://hls.boxingtvru.cdnvideo.ru/boxingtvru/boxingtvru_hq/playlist.m3u8
 
 #EXTINF:-1,КХЛ ТВ
 #EXTGRP:Другое
-http://83.234.104.142/khl/tracks-v1a1/index.m3u8
+https://83.234.104.142/khl/tracks-v1a1/index.m3u8
 
 #EXTINF:0,МАТЧ! ИГРА HD 
-http://195.88.16.15/matchigrahd/index.m3u8
+https://195.88.16.15/matchigrahd/index.m3u8
 #EXTINF:0,Матч!
-http://46.8.159.250:44489/channel48.m3u8
+https://46.8.159.250:44489/channel48.m3u8
 #EXTINF:0,Матч! Арена
-http://46.8.159.250:44489/channel115.m3u8
+https://46.8.159.250:44489/channel115.m3u8
 #EXTINF:0,Матч! Боец
-http://46.8.159.250:44489/channel113.m3u8
+https://46.8.159.250:44489/channel113.m3u8
 #EXTINF:0,Матч! Игра
-http://46.8.159.250:44489/channel114.m3u8
+https://46.8.159.250:44489/channel114.m3u8
 #EXTINF:0,Матч! Наш спорт
-http://46.8.159.250:44489/channel111.m3u8
+https://46.8.159.250:44489/channel111.m3u8
 #EXTINF:0,Матч! Планета
-http://46.8.159.250:44489/channel36.m3u8
+https://46.8.159.250:44489/channel36.m3u8
 #EXTINF:0 type="stream" channelId="-1", МАТЧ! АРЕНА HD
-http://91.192.168.242:6001/play/a023/index.m3u8
+https://91.192.168.242:6001/play/a023/index.m3u8
 #EXTINF:0 type="stream" channelId="-1", Матч! Футбол 1 HD
-http://persik.by/stream/3903/293564/10266.m3u8
+https://persik.by/stream/3903/293564/10266.m3u8
 #EXTINF:0 type="stream" channelId="-1", Матч! Футбол 2 HD
-http://persik.by/stream/3903/293564/10267.m3u8
+https://persik.by/stream/3903/293564/10267.m3u8
 #EXTINF:0 type="stream" channelId="-1", Матч! Футбол 3 HD
-http://persik.by/stream/3903/293564/10268.m3u8
+https://persik.by/stream/3903/293564/10268.m3u8
 #EXTINF:-1,Беларусь 5 Спорт
-http://95.46.208.76:9898/belarus5
+https://95.46.208.76:9898/belarus5
 
 
 
@@ -590,136 +590,136 @@ http://95.46.208.76:9898/belarus5
 
 #EXTINF:-1,FoodMan Club TV HD
 #EXTGRP:HD
-http://serv25.vintera.tv:8081/foodman/club/playlist.m3u8
+https://serv25.vintera.tv:8081/foodman/club/playlist.m3u8
 
 //Детские
 
 #EXTINF:-1,Nickelodeon HD
-http://195.88.16.15/nickelodeonhd/index.m3u8
+https://195.88.16.15/nickelodeonhd/index.m3u8
 
 #EXTINF:-1,Карусель
-http://195.88.16.15/karusel/index.m3u8
+https://195.88.16.15/karusel/index.m3u8
 
 #EXTINF:-1,Сказки Зайки
 #EXTGRP:Детские
-http://skazki.vintera.tv:8081/skazki/zaj/playlist.m3u8
+https://skazki.vintera.tv:8081/skazki/zaj/playlist.m3u8
 
 #EXTINF:-1,Смайлик ТВ HD
 #EXTGRP:HD
-http://109.68.190.192:1935/WEB_Smilik/Smilik.stream/playlist.m3u8
+https://109.68.190.192:1935/WEB_Smilik/Smilik.stream/playlist.m3u8
 
 #EXTINF:-1,TiJi
 #EXTGRP:Детские
-http://ott-cdn.ucom.am/s59/04.m3u8
+https://ott-cdn.ucom.am/s59/04.m3u8
 
 #EXTINF:-1,Детский
 #EXTGRP:Детские
-http://83.234.104.142/detskiy/tracks-v1a1/index.m3u8
+https://83.234.104.142/detskiy/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Детский Мир
 #EXTGRP:Детские
-http://hlstv.nsk.211.ru/239.211.211.80/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.80/stream.m3u8
 
 #EXTINF:-1,Калейдоскоп ТВ
 #EXTGRP:Детские
-http://cdn-01.bonus-tv.ru:8080/Kaleidoskop_edge/tracks-v1a1/index.m3u8
+https://cdn-01.bonus-tv.ru:8080/Kaleidoskop_edge/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Канал Disney
 #EXTGRP:Детские
-http://ott-cdn.ucom.am/s60/04.m3u8
+https://ott-cdn.ucom.am/s60/04.m3u8
 
 #EXTINF:-1,Карусель +3
 #EXTGRP:Детские
-http://hlstv.nsk.211.ru/239.211.0.8/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.0.8/stream.m3u8
 
 #EXTINF:-1,Мама
 #EXTGRP:Детские
-http://hlstv.nsk.211.ru/239.211.211.7/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.7/stream.m3u8
 
 #EXTINF:-1,Муз ТВ
 #EXTGRP:Музыкальные
-http://91.210.24.70:88/tv_sochi_muz_tv/video.m3u8
+https://91.210.24.70:88/tv_sochi_muz_tv/video.m3u8
 
 #EXTINF:-1,Мульт
 #EXTGRP:Детские
-http://83.234.104.142/mult/tracks-v1a1/index.m3u8
+https://83.234.104.142/mult/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Мульт и Музыка
 #EXTGRP:Детские
-http://cdnmg.secure.live.rtr-vesti.ru/live/smil:strana.smil/chunklist_b1600000.m3u8
+https://cdnmg.secure.live.rtr-vesti.ru/live/smil:strana.smil/chunklist_b1600000.m3u8
 
 #EXTINF:-1,Мультимания
 #EXTGRP:Детские
-http://hlstv.nsk.211.ru/239.211.211.3/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.3/stream.m3u8
 
 #EXTINF:-1,Первый Музыкальный RU BY
 #EXTGRP:Музыкальные
-http://rtmp.one.by:2200
+https://rtmp.one.by:2200
 
 
 //Автомобильные
 
 #EXTINF:-1,Авто 24
 #EXTGRP:Другое
-http://hlstv.nsk.211.ru/239.211.211.13/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.13/stream.m3u8
 
 
 //Другое
 
 #EXTINF:-1,ID Fashion TV
 #EXTGRP:Другое
-http://idfashion-hls1.cosmonova.net.ua/hls/idfashion_ua_low/index.m3u8
+https://idfashion-hls1.cosmonova.net.ua/hls/idfashion_ua_low/index.m3u8
 
 #EXTINF:-1,World Fashion Channel Россия [FHD]
 #EXTGRP:HD
-http://wfc.bonus-tv.ru:80/cdn/wfcrus/tracks-v2a1/index.m3u8
+https://wfc.bonus-tv.ru:80/cdn/wfcrus/tracks-v2a1/index.m3u8
 
 #EXTINF:-1,Luxury TV
 #EXTGRP:Другое
-http://nano.teleservice.su:8080/hls/luxury.m3u8
+https://nano.teleservice.su:8080/hls/luxury.m3u8
 
 #EXTINF:-1,БСТ
 #EXTGRP:Познавательные
-http://bsttv.bonus-tv.ru:80/cdn/bst/tracks-v1a1/index.m3u8
+https://bsttv.bonus-tv.ru:80/cdn/bst/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Доктор
 #EXTGRP:Познавательные
-http://hlstv.nsk.211.ru/239.211.211.67/stream.m3u8
+https://hlstv.nsk.211.ru/239.211.211.67/stream.m3u8
 
 #EXTINF:-1,КТК
 #EXTGRP:Другое
-http://89.218.30.37/ktklive/live.hq/playlist.m3u8
+https://89.218.30.37/ktklive/live.hq/playlist.m3u8
 
 #EXTINF:-1,Конный Мир
 #EXTGRP:Познавательные
-http://cdn-01.bonus-tv.ru:8080/konnyimir_edge/tracks-v1a1/index.m3u8
+https://cdn-01.bonus-tv.ru:8080/konnyimir_edge/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Красная линия ТВ
 #EXTGRP:Другое
-http://kprf-htlive.cdn.ngenix.net/live/_definst_/stream_high/playlist.m3u8
+https://kprf-htlive.cdn.ngenix.net/live/_definst_/stream_high/playlist.m3u8
 
 #EXTINF:-1,Крик ТВ
 #EXTGRP:Другое
-http://cdn-01.bonus-tv.ru:8080/kriktv_edge/tracks-v1a1/index.m3u8
+https://cdn-01.bonus-tv.ru:8080/kriktv_edge/tracks-v1a1/index.m3u8
 
 #EXTINF:-1,Любимое.TV
 #EXTGRP:Другое
-http://wse.planeta-online.tv:1935/live/channel_6/playlist.m3u8
+https://wse.planeta-online.tv:1935/live/channel_6/playlist.m3u8
 
 #EXTINF:-1,Первый Деловой
 #EXTGRP:Познавательные
-http://pershij-dlovij-hls3.cosmonova.net.ua/hls/pershij-dlovij_ua_hi/index.m3u8
+https://pershij-dlovij-hls3.cosmonova.net.ua/hls/pershij-dlovij_ua_hi/index.m3u8
 
 #EXTINF:-1,РБК ТВ
 #EXTGRP:Другое
-http://online.video.rbc.ru/online/rbctv_480p/index.m3u8
+https://online.video.rbc.ru/online/rbctv_480p/index.m3u8
 
 #EXTINF:-1,ТДК
 #EXTGRP:Другое
-http://live.tdktv.cdnvideo.ru/tdktv/tdktv.sdp/playlist.m3u8
+https://live.tdktv.cdnvideo.ru/tdktv/tdktv.sdp/playlist.m3u8
 
 #EXTINF:-1,ТНВ Планета
 #EXTGRP:Другое
-http://cdn-01.bonus-tv.ru:8080/tnv_edge/tracks-v1a1/index.m3u8
+https://cdn-01.bonus-tv.ru:8080/tnv_edge/tracks-v1a1/index.m3u8
 
 

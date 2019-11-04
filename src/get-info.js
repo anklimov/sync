@@ -424,6 +424,13 @@ var Getters = {
         callback(false, media);
     },
 
+  /* webtorrent stream */
+    wt: function (id, callback) {
+        var title = "Webtorrent";
+        var media = new Media(id, title, "--:--", "wt");
+        callback(false, media);
+    },
+
     /* HLS stream */
     hl: function (id, callback) {
         var title = "Livestream";

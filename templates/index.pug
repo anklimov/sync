@@ -2,6 +2,7 @@ extends layout.pug
 
 block content
   .col-lg-9.col-md-9
+    p.text-muted Здесь вы можете просматривать любимые фильмы в компании друзей, одновременно общаясь в текстовом или видеочате 
     h3 Общие каналы
     table.table.table-bordered.table-striped
       thead
@@ -17,7 +18,7 @@ block content
   .col-lg-3.col-md-3
     h3 Войти в канал
     input#channelname.form-control(type="text", placeholder="Channel Name")
-    p.text-muted New channels can be registered from the <a href="/account/channels">My Channels</a> page.
+    p.text-muted Вы можете зарегистрировать свой канал на странице <a href="/account/channels">My Channels</a>.
 
 append footer
   script(type="text/javascript").

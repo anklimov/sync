@@ -40,9 +40,9 @@ html(lang="en")
           #main.row
             #chatwrap.col-lg-5.col-md-5
               p#confwrap-header
-                span#resize-conf-smaller.glyphicon.glyphicon-minus.pointer(title="Make the video smaller")
-                span#resize-conf-larger.glyphicon.glyphicon-plus.pointer(title="Make the video larger")
-                span#conftitle Видеочат
+                span#resize-conf-smaller.glyphicon.glyphicon-remove.pointer(title="Выключить видеочат")
+                span#resize-conf-larger.glyphicon.glyphicon-facetime-video.pointer(title="Включить видеочат")
+                span#conftitle   Видеочат
               #embedconfplayer.embed-responsive.embed-responsive-16by9
                 #confplayer.embed-responsive-item
               #chatheader
@@ -264,3 +264,4 @@ html(lang="en")
     script(defer, src="/js/dash.all.min.js")
     script(defer, src="/js/videojs-dash.js")
     script(defer, src="https://player.twitch.tv/js/embed/v1.js")
+    script(defer, src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js")

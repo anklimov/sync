@@ -58,6 +58,8 @@ function formatURL(data) {
             return data.id;
         case "mx":
             return "https://mixer.com/" + data.meta.mixer.channelToken;
+        case "wt":
+            return data.id;
         default:
             return "#";
     }
@@ -1267,6 +1269,13 @@ function parseMediaLink(url) {
         };
     }
 
+  if(url.indexOf("magnet:") == 0) {
+        return {
+            id: url,
+            type: "wt"
+        };
+    }
+
     var m;
     if((m = url.match(/youtube\.com\/watch\?([^#]+)/))) {
         return {
@@ -1440,13 +1449,16 @@ function parseMediaLink(url) {
     /* Raw file */
     var tmp = url.split("?")[0];
     if (tmp.match(/^https?:\/\//)) {
+/*
         if (tmp.match(/^http:/)) {
             Callbacks.queueFail({
                 link: url,
                 msg: "Raw files must begin with 'https'.  Plain http is not supported."
             });
             throw new Error("ERROR_QUEUE_HTTP");
-        } else if (tmp.match(/\.json$/)) {
+        } 
+        else    */
+       if (tmp.match(/\.json$/)) {
             return {
                 id: url,
                 type: "cm"

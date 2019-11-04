@@ -14,10 +14,20 @@ window.PlayerJSPlayer = class PlayerJSPlayer extends Player
             throw new Error('Invalid input: missing meta.playerjs')
 
         waitUntilDefined(window, 'playerjs', =>
-            iframe = $('<iframe/>')
+            if (data.type != "wt")
+                iframe = $('<iframe/>')
                     .attr(src: data.meta.playerjs.src)
-
-            removeOld(iframe)
+                removeOld(iframe)
+            else
+                attrs =
+                   width: '100%'
+                   height: '100%'
+                   controls: ''
+                   autoplay: 'true'
+                iframe = $('<video/>')
+                   .addClass('video-js vjs-default-skin embed-responsive-item')
+                   .attr(attrs)
+                removeOld(iframe)
 
             @player = new playerjs.Player(iframe[0])
             @player.on('ready', =>

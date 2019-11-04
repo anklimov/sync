@@ -26,6 +26,7 @@ var order = [
     'gdrive-youtube.coffee',
     'hls.coffee',
     'mixer.coffee',
+    'webtorrent.coffee',
     'update.coffee'
 ];
 
