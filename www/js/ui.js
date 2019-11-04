@@ -1,12 +1,18 @@
 /* window focus/blur */
-$(window).focus(function() {
+CyTube.ui.onPageFocus = function () {
     FOCUSED = true;
     clearInterval(TITLE_BLINK);
     TITLE_BLINK = false;
     document.title = PAGETITLE;
-}).blur(function() {
+};
+
+CyTube.ui.onPageBlur = function (event) {
     FOCUSED = false;
-});
+};
+
+$(window).focus(CyTube.ui.onPageFocus).blur(CyTube.ui.onPageBlur);
+// See #783
+$(".modal").focus(CyTube.ui.onPageFocus);
 
 $("#togglemotd").click(function () {
     var hidden = $("#motd").css("display") === "none";
@@ -298,6 +304,19 @@ $("#mediarefresh").click(function() {
     // playerReady triggers the server to send a changeMedia.
     // the changeMedia handler then reloads the player
     socket.emit("playerReady");
+});
+
+if (USEROPTS.synch == false)
+    $("#togglesynch").find("span").attr('class', 'glyphicon glyphicon-pause');
+
+$("#togglesynch").click(function() {
+    if (USEROPTS.synch == true) {
+        USEROPTS.synch = false;
+        $("#togglesynch").find("span").attr('class', 'glyphicon glyphicon-pause')
+    } else if (USEROPTS.synch == false) {
+        USEROPTS.synch = true;
+        $("#togglesynch").find("span").attr('class', 'glyphicon glyphicon-play')
+    }
 });
 
 /* playlist controls */
@@ -793,6 +812,11 @@ var toggleUserlist = function () {
 
 $("#usercount").click(toggleUserlist);
 $("#userlisttoggle").click(toggleUserlist);
+
+$(document).on("click",".username", function () {
+    $("#chatline").val(($(this).text()) + $("#chatline").val());
+    $("#chatline").focus();
+});
 
 $(".add-temp").change(function () {
     $(".add-temp").prop("checked", $(this).prop("checked"));

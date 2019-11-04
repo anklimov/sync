@@ -35,6 +35,10 @@ Callbacks = {
         scrollChat();
     },
 
+    reconnect: function () {
+        socket.emit("reportReconnect");
+    },
+
     // Socket.IO error callback
     error: function (msg) {
         window.SOCKET_ERROR_REASON = msg;
@@ -296,42 +300,54 @@ Callbacks = {
     },
 
     channelCSSJS: function(data) {
-        $("#chancss").remove();
-        CHANNEL.css = data.css;
-        $("#cs-csstext").val(data.css);
-        if(data.css && !USEROPTS.ignore_channelcss) {
-            $("<style/>").attr("type", "text/css")
-                .attr("id", "chancss")
-                .text(data.css)
-                .appendTo($("head"));
+        if (CyTube.channelCustomizations.cssHash !== data.cssHash) {
+            $("#chancss").remove();
+            CHANNEL.css = data.css;
+            $("#cs-csstext").val(data.css);
+            if(data.css && !USEROPTS.ignore_channelcss) {
+                $("<style/>").attr("type", "text/css")
+                    .attr("id", "chancss")
+                    .text(data.css)
+                    .appendTo($("head"));
+            }
+
+            if (data.cssHash) {
+                CyTube.channelCustomizations.cssHash = data.cssHash;
+            }
         }
 
-        $("#chanjs").remove();
-        CHANNEL.js = data.js;
-        $("#cs-jstext").val(data.js);
+        if (CyTube.channelCustomizations.jsHash !== data.jsHash) {
+            $("#chanjs").remove();
+            CHANNEL.js = data.js;
+            $("#cs-jstext").val(data.js);
 
-        if(data.js && !USEROPTS.ignore_channeljs) {
-            var viewSource = document.createElement("button");
-            viewSource.className = "btn btn-danger";
-            viewSource.textContent = "View inline script source";
-            viewSource.onclick = function () {
-                var content = document.createElement("pre");
-                content.textContent = data.js;
-                modalAlert({
-                    title: "Inline JS",
-                    htmlContent: content.outerHTML,
-                    dismissText: "Close"
+            if(data.js && !USEROPTS.ignore_channeljs) {
+                var viewSource = document.createElement("button");
+                viewSource.className = "btn btn-danger";
+                viewSource.textContent = "View inline script source";
+                viewSource.onclick = function () {
+                    var content = document.createElement("pre");
+                    content.textContent = data.js;
+                    modalAlert({
+                        title: "Inline JS",
+                        htmlContent: content.outerHTML,
+                        dismissText: "Close"
+                    });
+                };
+
+                checkScriptAccess(viewSource, "embedded", function (pref) {
+                    if (pref === "ALLOW") {
+                        $("<script/>").attr("type", "text/javascript")
+                            .attr("id", "chanjs")
+                            .text(data.js)
+                            .appendTo($("body"));
+                    }
                 });
-            };
+            }
 
-            checkScriptAccess(viewSource, "embedded", function (pref) {
-                if (pref === "ALLOW") {
-                    $("<script/>").attr("type", "text/javascript")
-                        .attr("id", "chanjs")
-                        .text(data.js)
-                        .appendTo($("body"));
-                }
-            });
+            if (data.jsHash) {
+                CyTube.channelCustomizations.jsHash = data.jsHash;
+            }
         }
     },
 
@@ -472,10 +488,12 @@ Callbacks = {
             return;
         }
 
+        var ping = false;
+
         if (data.username === CLIENT.name) {
             name = data.to;
         } else {
-            pingMessage(true);
+            ping = true;
         }
         var pm = initPm(name);
         var msg = formatChatMessage(data, pm.data("last"));
@@ -484,6 +502,10 @@ Callbacks = {
         buffer.scrollTop(buffer.prop("scrollHeight"));
         if (pm.find(".panel-body").is(":hidden")) {
             pm.removeClass("panel-default").addClass("panel-primary");
+        }
+
+        if (ping) {
+            pingMessage(true, "PM: " + name, $(msg.children()[2]).text());
         }
     },
 

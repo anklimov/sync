@@ -222,14 +222,19 @@ function addUserDropdown(entry) {
             if(IGNORED.indexOf(name) == -1) {
                 ignore.text("Unignore User");
                 IGNORED.push(name);
+                entry.addClass("userlist-ignored");
             } else {
                 ignore.text("Ignore User");
                 IGNORED.splice(IGNORED.indexOf(name), 1);
+                entry.removeClass("userlist-ignored");
             }
+            setOpt("ignorelist", IGNORED);
         });
     if(IGNORED.indexOf(name) == -1) {
+        entry.removeClass("userlist-ignored");
         ignore.text("Ignore User");
     } else {
+        entry.addClass("userlist-ignored");
         ignore.text("Unignore User");
     }
 
@@ -644,6 +649,7 @@ function showUserOptions() {
     $("#us-sort-afk").prop("checked", USEROPTS.sort_afk);
     $("#us-blink-title").val(USEROPTS.blink_title);
     $("#us-ping-sound").val(USEROPTS.boop);
+    $("#us-notifications").val(USEROPTS.notifications);
     $("#us-sendbtn").prop("checked", USEROPTS.chatbtn);
     $("#us-no-emotes").prop("checked", USEROPTS.no_emotes);
     $("#us-strip-image").prop("checked", USEROPTS.strip_image);
@@ -678,6 +684,7 @@ function saveUserOptions() {
     USEROPTS.sort_afk             = $("#us-sort-afk").prop("checked");
     USEROPTS.blink_title          = $("#us-blink-title").val();
     USEROPTS.boop                 = $("#us-ping-sound").val();
+    USEROPTS.notifications        = $("#us-notifications").val();
     USEROPTS.chatbtn              = $("#us-sendbtn").prop("checked");
     USEROPTS.no_emotes            = $("#us-no-emotes").prop("checked");
     USEROPTS.strip_image          = $("#us-strip-image").prop("checked");
@@ -759,6 +766,19 @@ function applyOpts() {
         $("#modflair").removeClass("label-success")
             .addClass("label-default");
     }
+
+    if (USEROPTS.notifications !== "never") {
+        if ("Notification" in window) {
+            Notification.requestPermission().then(function(permission) {
+                if (permission !== "granted") {
+                    USEROPTS.notifications = "never";
+                }
+            });
+        }
+        else {
+            USEROPTS.notifications = "never";
+        }
+    }    
 }
 
 function parseTimeout(t) {
@@ -1305,6 +1325,14 @@ function parseMediaLink(url) {
         };
     }
 
+    // #790
+    if ((m = url.match(/twitch\.tv\/(?:.*?)\/clip\/([A-Za-z]+)/))) {
+        return {
+            id: m[1],
+            type: "tc"
+        }
+    }
+
     if((m = url.match(/twitch\.tv\/(?:.*?)\/([cv])\/(\d+)/))) {
         return {
             id: m[1] + m[2],
@@ -1463,6 +1491,20 @@ function parseMediaLink(url) {
                 id: url,
                 type: "cm"
             };
+        } else if (tmp.match(/kissanime|kimcartoon|kisscartoon/i)) {
+            Callbacks.queueFail({
+                link: url,
+                msg: "Kisscartoon and Kissanime are not supported.  See https://git.io/vxS9n" +
+                     " for more information about why these cannot be supported."
+            });
+            throw new Error("ERROR_QUEUE_KISS");
+        } else if (tmp.match(/mega\.nz/)) {
+            Callbacks.queueFail({
+                link: url,
+                msg: "Mega.nz is not supported.  See https://git.io/fx6fz" +
+                     " for more information about why mega.nz cannot be supported."
+            });
+            throw new Error("ERROR_QUEUE_MEGA");
         } else if (tmp.match(/\.(mp4|flv|webm|og[gv]|mp3|mov|m4a)$/)) {
             return {
                 id: url,
@@ -1659,8 +1701,7 @@ function addChatMessage(data) {
         }
     }
 
-    pingMessage(isHighlight);
-
+    pingMessage(isHighlight, data.username, $(div.children()[2]).text());
 }
 
 function trimChatBuffer() {
@@ -1677,7 +1718,7 @@ function trimChatBuffer() {
     return count;
 }
 
-function pingMessage(isHighlight) {
+function pingMessage(isHighlight, notificationTitle, notificationBody) {
     if (!FOCUSED) {
         if (!TITLE_BLINK && (USEROPTS.blink_title === "always" ||
             USEROPTS.blink_title === "onlyping" && isHighlight)) {
@@ -1693,7 +1734,17 @@ function pingMessage(isHighlight) {
             isHighlight)) {
             CHATSOUND.play();
         }
+
+        if (USEROPTS.notifications === "always" || (USEROPTS.notifications === "onlyping" &&
+            isHighlight)) {
+            showDesktopNotification(notificationTitle, notificationBody);
+        }
     }
+}
+
+function showDesktopNotification(notificationTitle, notificationBody)
+{
+    new Notification(notificationTitle, {body: notificationBody, icon: null});
 }
 
 /* layouts */
@@ -2770,7 +2821,7 @@ function initPm(user) {
     var buffer = $("<div/>").addClass("pm-buffer linewrap").appendTo(body);
     $("<hr/>").appendTo(body);
     var input = $("<input/>").addClass("form-control pm-input").attr("type", "text")
-        .attr("maxlength", 240)
+        .attr("maxlength", 320)
         .appendTo(body);
 
     input.keydown(function (ev) {
