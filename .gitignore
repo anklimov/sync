@@ -12,6 +12,9 @@ node_modules
 *.key
 torlist
 www/cache
+.idea
+.vagrant
+Vagrantfile
 google-drive-subtitles
 lib/
 integration-test-config.json

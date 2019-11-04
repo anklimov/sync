@@ -585,6 +585,10 @@ table td {
     max-width: 100%;
 }
 
+.username {
+    cursor: pointer;
+}
+
 #userlisttoggle {
     padding-top: 2px;
 }
@@ -677,7 +681,7 @@ input#logout[type="submit"]:hover {
 
 #soundcloud-volume-label {
     margin-left: 2px;
-}
+y}
 
 #soundcloud-volume {
     margin-top: 5px;
@@ -695,7 +699,8 @@ body.hd #resize-video-larger, body.hd #resize-video-smaller {
 
 .visible {  
 display: block;  
-}  
+}
+  
 .hidden {  
 display: none;  
 opacity: 0;  
@@ -705,3 +710,6 @@ opacity: 0;
     display: none;
 }
 
+.userlist-ignored {
+    text-decoration: line-through;
+}

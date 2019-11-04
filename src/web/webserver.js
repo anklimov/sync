@@ -12,7 +12,6 @@ import { CSRFError, HTTPError } from '../errors';
 import counters from '../counters';
 import { Summary, Counter } from 'prom-client';
 import session from '../session';
-import { verify as csrfVerify } from './csrf';
 const verifySessionAsync = require('bluebird').promisify(session.verifySession);
 
 const LOGGER = require('@calzoneman/jsli')('webserver');
@@ -142,8 +141,6 @@ module.exports = {
         channelIndex,
         session,
         globalMessageBus,
-        accountController,
-        channelDB,
         emailConfig,
         emailController
     ) {
@@ -206,22 +203,18 @@ module.exports = {
         require('./routes/contact')(app, webConfig);
         require('./auth').init(app);
         require('./account').init(app, globalMessageBus, emailConfig, emailController);
+        require('./routes/account/delete-account')(
+            app,
+            csrf.verify,
+            require('../database/channels'),
+            require('../database/accounts'),
+            emailConfig,
+            emailController
+        );
+
         require('./acp').init(app, ioConfig);
         require('../google2vtt').attach(app);
         require('./routes/google_drive_userscript')(app);
-
-        if (process.env.UNFINISHED_FEATURE) {
-            const { AccountDataRoute } = require('./routes/account/data');
-            require('@calzoneman/express-babel-decorators').bind(
-                app,
-                new AccountDataRoute(
-                    accountController,
-                    channelDB,
-                    csrfVerify,
-                    verifySessionAsync
-                )
-            );
-        }
 
         app.use(serveStatic(path.join(__dirname, '..', '..', 'www'), {
             maxAge: webConfig.getCacheTTL()

@@ -229,7 +229,15 @@ class IOServer {
 
         LOGGER.info('Accepted socket from %s', socket.context.ipAddress);
         counters.add('socket.io:accept', 1);
-        socket.once('disconnect', () => counters.add('socket.io:disconnect', 1));
+        socket.once('disconnect', (reason, reasonDetail) => {
+            LOGGER.info(
+                '%s disconnected (%s%s)',
+                socket.context.ipAddress,
+                reason,
+                reasonDetail ? ` - ${reasonDetail}` : ''
+            );
+            counters.add('socket.io:disconnect', 1);
+        });
 
         const user = new User(socket, socket.context.ipAddress, socket.context.user);
         if (socket.context.user) {
@@ -243,16 +251,17 @@ class IOServer {
     }
 
     setRateLimiter(socket) {
-        const thunk = () => Config.get('io.throttle.in-rate-limit');
+        const refillRate = () => Config.get('io.throttle.in-rate-limit');
+        const capacity = () => Config.get('io.throttle.bucket-capacity');
 
-        socket._inRateLimit = new TokenBucket(thunk, thunk);
+        socket._inRateLimit = new TokenBucket(capacity, refillRate);
 
         socket.on('cytube:count-event', () => {
             if (socket._inRateLimit.throttle()) {
                 LOGGER.warn(
                     'Kicking client %s: exceeded in-rate-limit of %d',
                     socket.context.ipAddress,
-                    thunk()
+                    refillRate()
                 );
 
                 socket.emit('kick', { reason: 'Rate limit exceeded' });
@@ -281,8 +290,37 @@ class IOServer {
             throw new Error('Cannot bind: socket.io has not been initialized yet');
         }
 
+        const engineOpts = {
+            /*
+             * Set ping timeout to 2 minutes to avoid spurious reconnects
+             * during transient network issues.  The default of 5 minutes
+             * is too aggressive.
+             *
+             * https://github.com/calzoneman/sync/issues/780
+             */
+            pingTimeout: 120000,
+
+            /*
+             * Per `ws` docs: "Note that Node.js has a variety of issues with
+             * high-performance compression, where increased concurrency,
+             * especially on Linux, can lead to catastrophic memory
+             * fragmentation and slow performance."
+             *
+             * CyTube's frames are ordinarily quite small, so there's not much
+             * point in compressing them.
+             */
+            perMessageDeflate: false,
+            httpCompression: false,
+
+            /*
+             * Default is 10MB.
+             * Even 1MiB seems like a generous limit...
+             */
+            maxHttpBufferSize: 1 << 20
+        };
+
         servers.forEach(server => {
-            this.io.attach(server);
+            this.io.attach(server, engineOpts);
         });
     }
 }
@@ -367,6 +405,10 @@ const promSocketDisconnect = new Counter({
     name: 'cytube_sockets_disconnects_total',
     help: 'Counter for number of connections disconnected.'
 });
+const promSocketReconnect = new Counter({
+    name: 'cytube_sockets_reconnects_total',
+    help: 'Counter for number of reconnects detected.'
+});
 function emitMetrics(sock) {
     try {
         let closed = false;
@@ -395,6 +437,15 @@ function emitMetrics(sock) {
                 promSocketDisconnect.inc(1);
             } catch (error) {
                 LOGGER.error('Error emitting disconnect metrics for socket (ip=%s): %s',
+                        sock.context.ipAddress, error.stack);
+            }
+        });
+
+        sock.once('reportReconnect', () => {
+            try {
+                promSocketReconnect.inc(1, new Date());
+            } catch (error) {
+                LOGGER.error('Error emitting reconnect metrics for socket (ip=%s): %s',
                         sock.context.ipAddress, error.stack);
             }
         });
@@ -437,6 +488,18 @@ module.exports = {
             } else {
                 const server = http.createServer().listen(bind.port, bind.ip);
                 servers.push(server);
+                server.on("error", error => {
+                    if (error.code === "EADDRINUSE") {
+                        LOGGER.fatal(
+                            "Could not bind %s: address already in use.  Check " +
+                            "whether another application has already bound this " +
+                            "port, or whether another instance of this server " +
+                            "is running.",
+                            id
+                        );
+                        process.exit(1);
+                    }
+                });
             }
 
             uniqueListenAddresses.add(id);
