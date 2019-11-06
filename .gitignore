@@ -17,6 +17,7 @@ www/cache
 Vagrantfile
 google-drive-subtitles
 lib/
+lib.sav/
 integration-test-config.json
 conf/*.toml
 www/js/cytube-google-drive.user.js

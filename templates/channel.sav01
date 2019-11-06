@@ -39,6 +39,10 @@ html(lang="en")
               h1#drinkcount
           #main.row
             #chatwrap.col-lg-5.col-md-5
+              p#confwrap-header
+                span#resize-conf-smaller.glyphicon.glyphicon-remove.pointer(title="Выключить видеочат")
+                span#resize-conf-larger.glyphicon.glyphicon-facetime-video.pointer(title="Включить видеочат")
+                span#conftitle   Видеочат
               #embedconfplayer.embed-responsive.embed-responsive-16by9
                 #confplayer.embed-responsive-item
               #chatheader
@@ -66,10 +70,6 @@ html(lang="en")
             #leftcontrols.col-lg-5.col-md-5
               button#newpollbtn.btn.btn-sm.btn-default New Poll
               button#emotelistbtn.btn.btn-sm.btn-default Emote List
-              p#confwrap-header
-                span#resize-conf-smaller.glyphicon.glyphicon-remove.pointer(title="Выключить видеочат")
-                span#resize-conf-larger.glyphicon.glyphicon-facetime-video.pointer(title="Включить видеочат")
-                span#conftitle   Видеочат
             #rightcontrols.col-lg-7.col-md-7
               #plcontrol.btn-group
                 button#showsearch.btn.btn-sm.btn-default(title="Search for a video", data-toggle="collapse", data-target="#searchcontrol")

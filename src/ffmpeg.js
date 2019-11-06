@@ -134,10 +134,10 @@ function getCookie(res) {
 function testUrl(url, cb, params = { redirCount: 0, cookie: '' }) {
     const { redirCount, cookie } = params;
     var data = urlparse.parse(url);
-    if (!/https:/.test(data.protocol)) {
-        return cb("Only links starting with 'https://' are supported " +
-                  "for raw audio/video support");
-    }
+//    if (!/https:/.test(data.protocol)) {
+//        return cb("Only links starting with 'https://' are supported " +
+//                  "for raw audio/video support");
+//    }
 
     if (!data.hostname) {
         return cb("The link to the file is missing the website address and can't " +
@@ -415,10 +415,10 @@ exports.query = function (filename, cb) {
         return cb("Raw file playback is not enabled on this server");
     }
 
-    if (!filename.match(/^https:\/\//)) {
-        return cb("Raw file playback is only supported for links accessible via HTTPS. " +
-                  "Ensure that the link begins with 'https://'.");
-    }
+//    if (!filename.match(/^https:\/\//)) {
+//        return cb("Raw file playback is only supported for links accessible via HTTPS. " +
+//                  "Ensure that the link begins with 'https://'.");
+//    }
 
     testUrl(filename, callOnce(function (err) {
         if (err) {

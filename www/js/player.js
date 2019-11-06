@@ -351,6 +351,7 @@
           });
           return _this.dm.addEventListener('apiready', function() {
             _this.dm.ready = true;
+            _this.dm.apiready = true;
             _this.dm.addEventListener('ended', function() {
               if (CLIENT.leader) {
                 return socket.emit('playNext');
@@ -362,7 +363,7 @@
                 return sendVideoUpdate();
               }
             });
-            return _this.dm.addEventListener('playing', function() {
+            _this.dm.addEventListener('playing', function() {
               _this.paused = false;
               if (CLIENT.leader) {
                 sendVideoUpdate();
@@ -372,6 +373,12 @@
                 return _this.initialVolumeSet = true;
               }
             });
+            _this.dm.addEventListener('video_end', function() {
+              return _this.dm.ready = false;
+            });
+            return _this.dm.addEventListener('playback_ready', function() {
+              return _this.dm.ready = true;
+            });
           });
         };
       })(this));
@@ -379,7 +386,7 @@
 
     DailymotionPlayer.prototype.load = function(data) {
       this.setMediaProperties(data);
-      if (this.dm && this.dm.ready) {
+      if (this.dm && this.dm.apiready) {
         this.dm.load(data.id);
         return this.dm.seek(data.currentTime);
       } else {
