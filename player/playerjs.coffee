@@ -24,7 +24,7 @@ window.PlayerJSPlayer = class PlayerJSPlayer extends Player
                    height: '100%'
                    controls: ''
                    autoplay: 'true'
-                iframe = $('<video/>')
+                iframe = $('<video webkit-playsinline="true" playsinline="true"></video>')
                    .addClass('video-js vjs-default-skin embed-responsive-item')
                    .attr(attrs)
                 removeOld(iframe)

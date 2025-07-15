@@ -58,11 +58,15 @@ window.VideoJSPlayer = class VideoJSPlayer extends Player
             attrs =
                 width: '100%'
                 height: '100%'
+#                playsinline: true
+#                webkit-playsinline: true
 
             if @mediaType == 'cm' and data.meta.textTracks
                 attrs.crossorigin = 'anonymous'
+#            attrs.playsinline = 'true'
+#            attrs.webkit-playsinline = 'true' 
 
-            video = $('<video/>')
+            video = $('<video webkit-playsinline="true" playsinline="true"></video>')
                 .addClass('video-js vjs-default-skin embed-responsive-item')
                 .attr(attrs)
             removeOld(video)

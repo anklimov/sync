@@ -23,6 +23,7 @@ window.YouTubePlayer = class YouTubePlayer extends Player
                         iv_load_policy: 3 # iv_load_policy 3 indicates no annotations
                         rel: 0
                         wmode: wmode
+                        playsinline: 1
                     events:
                         onReady: @onReady.bind(this)
                         onStateChange: @onStateChange.bind(this)

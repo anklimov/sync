@@ -430,10 +430,23 @@ var Getters = {
             );
             return;
         }
-        var title = "Livestream";
-        var media = new Media(id, title, "--:--", "hl");
-        callback(false, media);
+ //           ffmpeg.query(id, function (err, data) {
+ //           if (err) {
+                      var title = "HLS stream";
+        	      var media = new Media(id, title, "--:--", "hl");
+        	      return callback(false, media);
+                //return cb(err);
+ //           }
+
+ //           var media = new Media(id, data.title, data.duration, "hl", {
+ //               bitrate: data.bitrate,
+ //               codec: data.codec
+ //           });
+ //           callback(null, media);
+ //       });
+
     },
+
 
     /* imgur.com albums */
     im: function (id, callback) {

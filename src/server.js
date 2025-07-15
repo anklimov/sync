@@ -289,7 +289,8 @@ Server.prototype.getChannel = function (name) {
     var c = new Channel(name);
     promActiveChannels.inc();
     c.on("empty", function () {
-      ///  self.unloadChannel(c);
+    if (!(c.modules.options && c.modules.options.get("show_public")))
+        self.unloadChannel(c);
     });
     c.waitFlag(Flags.C_ERROR, () => {
         self.unloadChannel(c, { skipSave: true });

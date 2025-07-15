@@ -1,3 +1,5 @@
+import WebTorrent from './webtorrent.min.js'
+
 (function() {
   var CUSTOM_EMBED_WARNING, CustomEmbedPlayer, DEFAULT_ERROR, DailymotionPlayer, EmbedPlayer, FilePlayer, GoogleDrivePlayer, GoogleDriveYouTubePlayer, HLSPlayer, ImgurPlayer, LivestreamPlayer, MixerPlayer, Player, PlayerJSPlayer, RTMPPlayer, SmashcastPlayer, SoundCloudPlayer, StreamablePlayer, TYPE_MAP, TwitchPlayer, UstreamPlayer, VideoJSPlayer, VimeoPlayer, WebtorrentPlayer, YouTubePlayer, codecToMimeType, genParam, getSourceLabel, sortSources,
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
@@ -188,7 +190,8 @@
                 controls: 1,
                 iv_load_policy: 3,
                 rel: 0,
-                wmode: wmode
+                wmode: wmode,
+                playsinline: 1
               },
               events: {
                 onReady: _this.onReady.bind(_this),
@@ -546,7 +549,7 @@
           if (_this.mediaType === 'cm' && data.meta.textTracks) {
             attrs.crossorigin = 'anonymous';
           }
-          video = $('<video/>').addClass('video-js vjs-default-skin embed-responsive-item').attr(attrs);
+          video = $('<video webkit-playsinline="true" playsinline="true"></video>').addClass('video-js vjs-default-skin embed-responsive-item').attr(attrs);
           removeOld(video);
           _this.sources = sortSources(data.meta.direct);
           if (_this.sources.length === 0) {
@@ -744,7 +747,7 @@
               controls: '',
               autoplay: 'true'
             };
-            iframe = $('<video/>').addClass('video-js vjs-default-skin embed-responsive-item').attr(attrs);
+            iframe = $('<video webkit-playsinline="true" playsinline="true"></video>').addClass('video-js vjs-default-skin embed-responsive-item').attr(attrs);
             removeOld(iframe);
           }
           _this.player = new playerjs.Player(iframe[0]);
@@ -1723,6 +1726,7 @@
       if (!(this instanceof WebtorrentPlayer)) {
         return new WebtorrentPlayer(data);
       }
+      //var WebTorrent = require('webtorrent')
       this.client = new WebTorrent();
       WebtorrentPlayer.__super__.constructor.call(this, data);
     }

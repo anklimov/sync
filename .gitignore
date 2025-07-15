@@ -25,4 +25,5 @@ www/js/cytube-google-drive.meta.js
 ###www/js/player.js
 tor-exit-list.json
 config.yaml.bak
+.ssh
 

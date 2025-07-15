@@ -2,13 +2,13 @@ extends layout.pug
 
 block content
   .col-lg-9.col-md-9
-    p.text-muted Здесь вы можете просматривать любимые фильмы в компании друзей, одновременно общаясь в текстовом или видеочате 
-    h3 Общие каналы
+    p.text-muted Здесь вы можете просматривать любимые фильмы в компании друзей, одновременно общаясь в текстовом или видеочате<br>Enjoy the favorite movies/music together with your friends & family, using chat and Video Conference same time 
+    h3 Общие каналы/Public channels
     table.table.table-bordered.table-striped
       thead
-        th Канал
-        th # Пользователей
-        th Сейчас проигрывается
+        th Канал/Channel
+        th # Пользователей/Online users
+        th Сейчас проигрывается/Playing now
       tbody
         each chan in channels
           tr
@@ -17,8 +17,9 @@ block content
             td= chan.mediatitle
   .col-lg-3.col-md-3
     h3 Войти в канал
+    h1 Enter channel
     input#channelname.form-control(type="text", placeholder="Channel Name")
-    p.text-muted Вы можете зарегистрировать свой канал на странице <a href="/account/channels">My Channels</a>.
+    p.text-muted Вы можете зарегистрировать свой канал на странице <a href="/account/channels">My Channels - make your own Channel here</a>.
 
 append footer
   script(type="text/javascript").

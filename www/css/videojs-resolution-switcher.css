@@ -1,3 +1,10 @@
+.vjs-resolution-button .vjs-menu-button .vjs-icon-placeholder::before {
+  font-family: VideoJS;
+  content: '\f110';
+  font-size: 1.8em;
+  line-height: 1.67;
+}
+
 .vjs-resolution-button .vjs-menu-icon:before {
   content: '\f110';
   font-family: VideoJS;
